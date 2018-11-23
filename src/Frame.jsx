@@ -30,7 +30,7 @@ export default class Frame extends Component {
     contentDidMount: () => {},
     contentDidUpdate: () => {},
     initialContent:
-      '<!DOCTYPE html><html><head></head><body><div class="frame-root"></div></body></html>'
+      '<!DOCTYPE html><html><head></head><body><div class="region-content"></div></body></html>'
   };
 
   constructor(props, context) {
@@ -89,7 +89,7 @@ export default class Frame extends Component {
         contentDidUpdate={contentDidUpdate}
       >
         <FrameContextProvider value={{ document: doc, window: win }}>
-          <div className="frame-content">{this.props.children}</div>
+          {this.props.children}
         </FrameContextProvider>
       </Content>
     );
