@@ -4,7 +4,6 @@
   "description": "React component to wrap your application or component in an iFrame for encapsulation purposes",
   "main": "lib/index.js",
   "scripts": {
-    "precommit": "lint-staged",
     "clean": "rimraf lib",
     "test": "npm-run-all --parallel lint karma:once --sequential build",
     "serve": "webpack-dev-server --host 0.0.0.0 --hot --inline --history-api-fallback",
